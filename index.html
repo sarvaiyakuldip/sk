@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        html{
+            scroll-behavior: auto;
+        }
+        :root{
+          --color: rgb(233, 247, 34);
+        }
+        body{
+            background-color: black;
+            overflow-x: hidden;
+      
+        }
+        span{
+            color:var(--color);
+        }
+        .header{
+            
+            padding:10px;
+            background-color: black;
+            height: 100%;
+            width: 100%;
+          
+   
+           
+
+
+        }
+      
+        .container nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 10px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 200px;
+
+        }
+        nav ul li a:hover{
+            color: var(--color);
+        }
+        .codehelp{
+            background-image: url('https://images.pexels.com/photos/683404/pexels-photo-683404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); 
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            position: relative;
+           
+        }
+        .codehelp2{
+            position: absolute;
+            top: 40%;
+            left: 37%;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+        .container nav h2{
+            color: var(--color);
+            display: inline-block;
+            margin: 0 0.5rem;
+            animation:  kj 0.5s ease 0s alternate infinite both;
+            animation-duration: 0.2s;
+            animation-delay: 0.2s;
+            position: relative;
+            vertical-align: top;
+            font-size: 30px;
+        }
+            
+
+            @keyframes kj{
+                0%{
+                    transform: scale(1.1);
+
+                }
+                10%{
+                    transform: scale(1.2);
+                    
+                }
+            }
+        
+        .codehelp2 h1 a{
+            color: var(--color);
+        }
+        .codehelp2 h3{
+            font-size: 18px;
+            letter-spacing: 4px;
+            color: var(--color);
+        }
+        .codehelp2 h2{
+            font-size: 45px;
+            color: var();
+            text-shadow: 0px 0px 10px #fff;
+        }
+        .codehelp3{
+            padding: 20px;
+        }
+      
+        .codehelp3 i{
+            padding: 10px 10px;
+            background-color: rgb(233, 247, 34);
+            border-radius: 20px;
+            border: 1px solid black;
+            color: #000;
+            border: 2px solid #fff;
+            margin: 5px;
+            box-shadow: 0px 0px 30px var(--color);
+            transition:transform 0.5s;
+        }
+        .codehelp3 i:hover{
+            transform: translateY(10px);
+
+        }
+        #btn{
+            background-color: var(--color);
+            padding: 12px 30px;
+            border-radius: 10px;
+            border: none;
+            /* box-shadow: 0px 0px 30px var(--color); */
+            transition:transform 0.5s;
+
+        }
+        #btn:hover{
+            transform: translateX(10px);
+            box-shadow: 0px 0px 30px var(--color);
+        }
+        
+        .about{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+        }
+        .about-me{
+            padding:10px;
+            margin: 0px;
+        }
+        .about-image img{
+            width: 100%;
+            height:100%;
+            filter: grayscale(1.1);
+            margin-right: 300px;
+            border-radius: 10px;
+            box-shadow: 4.0px 8.0px 8.0px hsla(174, 76%, 50%, 0.38);
+            animation: img 0.5s ease 0s alternate infinite both;
+            animation-duration: .2m;
+            animation-delay: 0.10s;
+            position: relative;
+            vertical-align: top;
+
+            
+        }
+        @keyframes img{
+            0%{
+                transform:translateY(5px);
+            }
+            100%{
+                transform: translateY(10px);
+            }
+        }
+        .about-image img:hover{
+            filter: grayscale(0);
+            cursor: pointer;
+            box-shadow: 0px 0px 30px var(--color);
+        }
+        .about-me h1{
+            font-size: 40px;
+            padding: 10px 20px;
+            color: var(--color);
+            text-shadow: 0px 0px 10px var(--color);
+            margin-bottom: 30px;
+            animation: kuldip 2s ease 0s infinite alternate both;
+            position: relative;
+            vertical-align: top;
+            animation-duration: 2s;
+            animation-delay: 0.2s;
+          }
+          @keyframes kuldip{
+            0%{
+                transform: translateY(-10px);
+            }
+            25%{
+                transform: translateY(20px);
+            }
+            50%{
+                transform: translateY(-30px);
+            }
+            75%{
+                transform: translateY(40px);
+            }
+            100%{
+                transform: translateY(-50px);
+            }
+          }
+           
+
+        .about-me p{
+            font-size: 20px;
+            padding: 10px 20px;
+            color: #fff;
+        }
+        .about-me h4{
+            font-size: 23px;
+            padding: 10px 20px;
+            color: #ffff;
+        }
+        .about-me{
+            /* display: inline-block;
+            margin: 0 0.5rem;
+
+            animation:bounceInUp;    
+            animation-duration: 2s ; 
+ */}
+        
+        .service{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+           column-gap: 30px ;
+           row-gap: 30px;
+           padding: 15px;
+           margin-top: 40px;
+          
+
+        }
+ .service-me:hover{
+            background-color:var(--color);
+            transform: translateY(-10px);
+            cursor: pointer;
+            color: #000;
+
+            
+        }
+        .service-me{
+            text-align: center;
+            padding: 70px;
+            margin: 20px;
+            background-color: #262626;
+            border-radius: 10px;
+            color: #fff;
+            transition: background 0.50s, transform 0.50s;
+            box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+        }
+        .service-me i{
+            background-color: aliceblue;
+            padding: 10px 10px;
+            border-radius: 20px;
+            border: 1px solid black;
+            color: #000;
+        }
+        .portfolio{
+            padding: 30px;
+            margin-top: 50px;
+        }
+        .portfolio1{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr ;
+          grid-template-rows: 1fr 1fr ;
+          row-gap: 40px;
+          column-gap: 40px;
+         
+          
+        }
+        .box:nth-child(1){
+            width: 100%;
+       
+        }
+      
+          
+        .box img{
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            
+            transition: border 0.5s, transform 0.5s;
+           
+        }
+        .box img:hover{
+     
+            transform: translateY(-20px);
+            cursor: pointer;
+       
+        }
+        #img1 img{
+            width: 100px;
+            height: 100px;
+
+        }
+        .blog{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            padding: 100px;
+            margin-top: 30px;
+        }
+        .blog h3{
+            color: var(--color);
+        }
+        .blog p{
+            color: #fff;
+        }
+        .blog-me i{
+            background-color: var(--color);
+            padding: 10px 10px;
+            border-radius: 20px;
+            border: 1px solid #fff;
+            box-shadow: 0px 0px 30px var(--color);
+
+            
+        }
+        .codehelp video{
+            width: 100%;
+            height: 100%;
+        }
+        .contact2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .mapp{
+            margin-top: 50px;
+        }
+        .map2 iframe{
+            padding: 100px;
+        }
+        .client{
+            padding: 30px;
+        }
+        .client2 img{
+            width: 100%;
+            max-width: 200px;
+            height: 100%;
+            max-height: 200px;
+         margin-left: 550px;
+         border-radius: 100px;
+            
+        }
+        .client2 h3{
+            color: #fff;
+
+        }
+        .client{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .client3 p{
+            color: #fff;
+            padding: 20px;
+        }
+
+        .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .sem h1{
+        text-align: center;
+        color: #fff;
+        animation: sem 0.5s ease 0s alternate infinite both;
+        position: relative;
+        animation-duration: 0.2s;
+        vertical-align: top;
+        animation-delay: 0.3s;
+    }
+    @keyframes sem{
+        0%{
+        transform:scale(1.1);
+        }
+        50%{
+        transform: scale(1.1);
+        }
+        10%{
+        transform: scale(1.1);
+        }
+       
+    }
+
+
+    .mainfooter{
+          padding: 10px;
+          margin-top: 70px;
+        }
+        .mainfooter2{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+          gap: 5px;
+          background-color: #262626;
+          min-height: 300px;
+        }
+        .mainfooter2 h3{
+            color: var(--color);
+        }
+        .mainfooter2 ul li{
+          text-decoration: none;
+          list-style: none;
+          line-height: 25px;
+          color: #fff;
+          
+        }
+        .cake1{
+          text-align: center;
+          margin-top: 50px;
+          
+        }
+        .sub form input{
+          width: 60%;
+          padding: 15px;
+          border: 2px solid var(--color);
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        .sub form #btn{
+          background-color:var(--color);
+          padding: 15px;
+          position: absolute;
+          border-radius: 0px;
+      
+          
+          border:2.5px solid var(--color);
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+        .sub p{
+            color: #fff;
+        }
+        .useful{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr ;
+            column-gap: 0px;
+            padding: 10px;
+            margin: 100px;
+
+
+        }
+        .useful1{
+            color: white;
+         
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+           
+           
+           
+        }
+        .useful2 form{
+           flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+           
+        }
+        .useful2 form input{
+            max-width: 500px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid var(--color);
+
+        }
+        .useful2 textarea{
+            max-width: 500px;
+            width: 100%;
+            border: 2px solid var(--color);
+        }
+        #btn2{
+            background-color: var(--color);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .fa-solid{
+                display: none;
+                color: red;
+            }
+      
+
+         @media only screen and (max-width:600px) {
+            .codehelp2{
+            position: absolute;
+            top: 40%;
+            left: 18%;
+            
+        }
+        body{
+            overflow-x: hidden;
+        }
+            .about{
+                flex-direction: column-reverse;
+            }
+            .about-me{
+                text-align: center;
+                padding: 20px;
+                margin: 20px;
+            }
+            .service{
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+            }
+           
+          
+            .portfolio1{
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 20px;
+            }
+           
+            .blog-me{
+                margin: 30px;
+                padding: 10px;
+            }
+            .mainfooter{
+                max-width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            .mainfooter2{
+                font-size: 2vw;
+                padding: 0;
+                gap: 1px;
+            }
+            .sub {
+                margin-right: 20px
+            }
+            .useful{
+                padding: 0;
+                margin: 20px;
+                
+            }
+            .useful1{
+                font-size: 2vw;
+
+            }
+            .blog{
+                padding: 0;
+            }
+            .about{
+               margin-top: 30px;
+            }
+
+            .fa-solid{
+                display: block;
+                color:var(--color);
+            }
+            nav ul{
+                position: fixed;
+                top: 0;
+                top: -400;
+                width: 100%;
+                height: 400px;
+                z-index: 2;
+                transition: top 0.5s;
+                background-color: var(--color);
+            }
+            nav ul li{
+                display: block;
+                margin: 20px;
+                text-align: center;
+                border-bottom: #fff solid 2px;
+            }
+            nav ul .fa-solid{
+                position: absolute;
+                 bottom: 24px;
+                right: 240px;
+                background-color: var(--color);
+                padding: 10px 13px;
+                border: 2px solid #fff;
+                border-radius: 20px;
+                color: #fff;
+            }
+            #btn{
+                display: none;
+            }
+           
+        } 
+        
+      
+      
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="web"></div>
+        <div class="container">
+            <nav>
+                <h2>Sk...</h2>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                   
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+                <button id="btn">Login</button>
+
+            </nav>
+        </div>
+        <div class="codehelp">
+          
+            <div class="codehelp2">
+              <h3>HELLO</h3>
+              <h2>Sarvaiya Kuldip</h2>
+              <h1>
+                 <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Si.", "I am Creative.",  "Web Develop." ]'>
+                 <span class="wrap"></span>
+        </a>
+        </h1>
+        <div class="codehelp3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>  
+        </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="about" id="about">
+        <div class="about-me">
+           <h1>About Me!</h1>
+           <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, quo?</h4>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quod dolorum autem qui corrupti natus harum distinctio eum quam quis repellendus error dignissimos hic laboriosam modi eveniet, voluptate beatae ipsa.</p>
+        </div>
+        <div class="about-image">
+            <img src="/image/IMG_20230927_153121_clipdrop-relight (1).jpeg" alt="">
+        </div>
+    </div>
+
+    <div class="sem">
+        <h1>S<span>ervice</span>s</h1>
+    </div>
+
+    <div class="service" id="service">
+        <div class="service-me">
+            <i class="fa-solid fa-desktop"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis quibusdam, provident quam maxime quis quod quos aperiam veritatis ratione?</p>
+        </div>
+        <div class="service-me">
+            <i class="fa-solid fa-pen"></i>
+            <h2>Development</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis quibusdam, provident quam maxime quis quod quos aperiam veritatis ratione?</p>
+        </div>
+        <div class="service-me">
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Marketing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis quibusdam, provident quam maxime quis quod quos aperiam veritatis ratione?</p>
+        </div>
+        <div class="service-me">
+            <i class="fa-solid fa-desktop"></i>
+            <h2>strategy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis quibusdam, provident quam maxime quis quod quos aperiam veritatis ratione?</p>
+        </div>
+        <div class="service-me">
+            <i class="fa-solid fa-gears"></i>
+            <h2>Support</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis quibusdam, provident quam maxime quis quod quos aperiam veritatis ratione?</p>
+        </div>
+        <div class="service-me">
+            <i class="fa-solid fa-desktop"></i>
+            <h2>We're Experienced</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi blanditiis quibusdam, provident quam maxime quis quod quos aperiam veritatis ratione?</p>
+        </div>
+    </div>
+
+    <div class="sem">
+        <h1>Po<span>rtfol</span>io</h1>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio1">
+            <div class="box"><img id="img1" src="https://images.unsplash.com/photo-1516961642265-531546e84af2?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FtZXJhfGVufDB8fDB8fHww" alt=""></div>
+            <div class="box"><img src="https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtZXJhfGVufDB8fDB8fHww" alt=""></div>
+            <div class="box"><img src="https://plus.unsplash.com/premium_photo-1670274606895-f2dc713f8a90?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" alt=""></div>
+            <div class="box"><img src="https://media.istockphoto.com/id/1355793419/photo/laptop-on-blue-background.jpg?s=612x612&w=0&k=20&c=ut7GAVF0HPEZ4h7FMDCK7lE19p_zZVcNJ-y3YYAQqQY=" alt=""></div>
+            <div class="box"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8fDA%3D" alt=""></div>
+            <div class="box"><img src="https://media.istockphoto.com/id/1921834397/photo/woman-works-with-a-holographic-financial-data-on-interactive-dashboard-of-the-laptop.jpg?s=612x612&w=0&k=20&c=Hw39ASdZtf2ZavPyWQmSrkcLKYmF5tmGAiFsKA3_KyY=" alt=""></div>
+
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="blog-me">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>200</h3>
+            <p>Total Project</p>
+        </div>
+        <div class="blog-me">
+            <i class="fa-regular fa-face-smile"></i>
+            <h3>120</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="blog-me">
+            <i class="fa-solid fa-briefcase"></i>
+            <h3>4</h3>
+            <p>Years of Experience</p>
+        </div>
+        <div class="blog-me">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>10</h3>
+            <p>Awaed won</p>
+        </div>
+    </div>
+
+    
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">    <div class="client">
+        <div class="client2">
+            <img src="https://images.unsplash.com/photo-1619533394727-57d522857f89?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBtYW58ZW58MHx8MHx8fDA%3D" alt="">
+            <div class="client3">
+                <h3>Harsh sharma</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem vitae provident, tenetur officiis similique alias dolorem sunt ducimus aspernatur deleniti commodi voluptas dolore non earum voluptatibus quod nostrum necessitatibus!</p>
+            </div>
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="client">
+        <div class="client2">
+            <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9kZWwlMjBnaXJsc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <div class="client3">
+                <h3>A.M.Varma</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem vitae provident, tenetur officiis similique alias dolorem sunt ducimus aspernatur deleniti commodi voluptas dolore non earum voluptatibus quod nostrum necessitatibus!</p>
+            </div>
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="client">
+        <div class="client2">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWwlMjBnaXJsc3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <div class="client3">
+                <h3>M.V.P</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem vitae provident, tenetur officiis similique alias dolorem sunt ducimus aspernatur deleniti commodi voluptas dolore non earum voluptatibus quod nostrum necessitatibus!</p>
+            </div>
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="client">
+        <div class="client2">
+            <img src="https://images.unsplash.com/photo-1480429370139-e0132c086e2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vZGVsJTIwbWFufGVufDB8fDB8fHww" alt="">
+            <div class="client3">
+                <h3>Arman</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem vitae provident, tenetur officiis similique alias dolorem sunt ducimus aspernatur deleniti commodi voluptas dolore non earum voluptatibus quod nostrum necessitatibus!</p>
+            </div>
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="client">
+        <div class="client2">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWwlMjBmYWNlfGVufDB8fDB8fHww" alt="">
+            <div class="client3">
+                <h3>H.P.V</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem vitae provident, tenetur officiis similique alias dolorem sunt ducimus aspernatur deleniti commodi voluptas dolore non earum voluptatibus quod nostrum necessitatibus!</p>
+            </div>
+        </div>
+    </div></div>
+      <div class="swiper-slide"><div class="client">
+        <div class="client2">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWwlMjBtYW58ZW58MHx8MHx8fDA%3D" alt="">
+            <div class="client3">
+                <h3>K.J.S</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quidem vitae provident, tenetur officiis similique alias dolorem sunt ducimus aspernatur deleniti commodi voluptas dolore non earum voluptatibus quod nostrum necessitatibus!</p>
+            </div>
+        </div>
+    </div></div>
+     
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    <div class="mapp">
+        <div class="mapp2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29819.5957770533!2d70.76954028789285!3d20.894228860072808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be2dd729a34a47b%3A0xe50cc1e2d05a5a87!2sSedhaya%2C%20Gujarat%20362710!5e0!3m2!1sen!2sin!4v1712854119346!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="sem">
+        <h1>Co<span>ntac</span>t</h1>
+    </div>
+
+    <div class="useful" id="contact">
+        <div class="useful1">
+            <h3>Name:-</h3>
+            <h3>@Gmail.com</h3>
+            <h3>+91 1234567890</h3>
+        </div>
+        <div class="useful2">
+            <form action="">
+                 <input type="text" placeholder="Name">
+                 <input type="email" placeholder="Email">
+                 <input type="number" placeholder="Number">
+                 <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                 <button id="btn2">Submit</button>
+            </form>
+           
+        </div>
+    </div>
+
+
+    <div class="mainfooter">
+        <div class="mainfooter2">
+          <div>
+            <h3>POLICY INFO</h3>
+            <ul>
+              <li>Terms & Conditions</li>
+              <li>Privacy</li>
+              <li>Policy</li>
+              <li>Tearn of Use</li>
+              <li>Disclaimer</li>
+            </ul>
+          </div>
+    
+          <div>
+            <h3>ABOUT COMPANY</h3>
+            <ul>
+              <li>About Us</li>
+              <li>FNP Team</li>
+              <li>Careers</li>
+              <li>Testimanials</li>
+              <li>News Room</li>
+            </ul>
+          </div>
+    
+          <div>
+            <h3>FNP BUSINESS</h3>
+            <ul>
+              <li>Decoration</li>
+              <li>Services</li>
+              <li>corporate</li>
+              <li>Service</li>
+              <li>Affillate</li>
+             
+            </ul>
+          </div>
+    
+          <div>
+            <h3>NEED HELP</h3>
+            <ul>
+              <li>?</li>
+              <li>Contact</li>
+              <li>Us</li>
+              <li>FAQS</li>
+              <li>?</li>
+            
+            </ul>
+          </div>
+    
+          <div>
+            <h3>USEFUL LINKS</h3>
+            <ul>
+              <li>Quotes N</li>
+              <li>Wishes</li>
+              <li>Flower</li>
+              <li>Astrology</li>
+              <li>Article</li>
+             
+            </ul>
+          </div>
+    
+    
+          <div class="sub">
+            <h3>SUBSCRIBE</h3>
+            <form action="">
+              <input type="email" placeholder="EMAIL">
+              <button id="btn">SUBMIT</button>
+            </form>
+            <p>Get Updates On Promotions and Offers Coupons.</p>
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+
+    
+
+    
+
+
+    
+
+
+
+    <script>
+        var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    </script>
+
+    <script>
+        var header = document.querySelector('.header');
+        var web = document.querySelector('.web');
+
+        header.addEventListener('mousemove',function(det){
+            cursor.style.left=dets.x+"px"
+            cursor.style.top=dets.x+"px"
+        })
+    </script>
+
+    
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    var sidemenu=document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.top="0";
+    }
+    function closemenu(){
+        sidemenu.style.top = "-400px"
+    }
+  </script>
+  
+</body>
+</html>
